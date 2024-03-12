@@ -21,7 +21,9 @@ class _Tela2ViewState extends State<Tela2View> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             OutlinedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pop(context);
+              },
               child: Text('anterior'),
             ),
             OutlinedButton(
