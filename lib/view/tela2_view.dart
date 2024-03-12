@@ -12,9 +12,13 @@ class Tela2View extends StatefulWidget {
 class _Tela2ViewState extends State<Tela2View> {
   @override
   Widget build(BuildContext context) {
+    //
+    //Obter os valores que foram passado como parâmetros
+    //
+    final nome = ModalRoute.of(context)!.settings.arguments;
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tela 2'),
+        title: Text('Tela 2: ${nome ?? 'Sem nome'}'),
 
         //desativar botão automático
         automaticallyImplyLeading: false,
@@ -31,7 +35,7 @@ class _Tela2ViewState extends State<Tela2View> {
             ),
             OutlinedButton(
               onPressed: () {
-                Navigator.pushNamed(context, 't3');
+                Navigator.pushNamed(context, 't3', arguments: nome);
               },
               child: Text('próxima'),
             ),

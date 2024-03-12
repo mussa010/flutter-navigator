@@ -12,9 +12,10 @@ class Tela3View extends StatefulWidget {
 class _Tela3ViewState extends State<Tela3View> {
   @override
   Widget build(BuildContext context) {
+    final nome = ModalRoute.of(context)!.settings.arguments;
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tela 3'),
+        title: Text('Tela 3: ${nome ?? 'Sem nome'}'),
         //desativar botão automático
         automaticallyImplyLeading: false,
       ),
