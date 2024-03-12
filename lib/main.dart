@@ -1,12 +1,12 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:app05/view/tela3_view.dart';
-import 'package:app05/view/tela4_view.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 
 import 'view/tela1_view.dart';
 import 'view/tela2_view.dart';
+import 'view/tela3_view.dart';
+import 'view/tela4_view.dart';
 
 void main() {
   runApp(
