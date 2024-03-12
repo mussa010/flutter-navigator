@@ -4,6 +4,7 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 
 import 'view/tela1_view.dart';
+import 'view/tela2_view.dart';
 
 void main() {
   runApp(
@@ -33,6 +34,7 @@ class MainApp extends StatelessWidget {
       initialRoute: 't1',
       routes: {
         't1': (context) => Tela1View(),
+        't2': (context) => Tela2View(),
       },
     );
   }

@@ -18,7 +18,9 @@ class _Tela1ViewState extends State<Tela1View> {
       ),
       body: Center(
         child: OutlinedButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, 't2');
+          },
           child: Text('abrir'),
         ),
       ),
