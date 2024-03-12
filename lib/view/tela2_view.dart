@@ -15,6 +15,9 @@ class _Tela2ViewState extends State<Tela2View> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Tela 2'),
+
+        //desativar botão automático
+        automaticallyImplyLeading: false,
       ),
       body: Center(
         child: Row(
@@ -27,7 +30,9 @@ class _Tela2ViewState extends State<Tela2View> {
               child: Text('anterior'),
             ),
             OutlinedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, 't3');
+              },
               child: Text('próxima'),
             ),
           ],
